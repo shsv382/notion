@@ -1,7 +1,8 @@
 export interface IUnit {
     unitType: string;
     text: string;
-    editing: boolean
+    editing: boolean,
+    checked: boolean
 }
 
 export interface IUnitPlainText extends IUnit {
@@ -14,5 +15,4 @@ export interface IUnitCallOut extends IUnit {
 }
 
 export interface IUnitCheckbox extends IUnit {
-    checked: boolean
 }

@@ -26,14 +26,13 @@ const CheckboxUnit = (props) => {
                     type="checkbox" 
                     className="checkbox-unit__checkbox"
                     checked={checked} 
-                    onClick={onCheck}
+                    onChange={onCheck}
                     id={`checkbox-${index}`} />
                 <label
-                    onClick={onCheck}
                     className="checkbox-unit__label"
                     for={`checkbox-${index}`}></label>
                 <div 
-                    className={`unit__elem checkbox-unit`} 
+                    className={`checkbox-unit checkbox-text ${checked ? "checkbox-checked" : ""}`} 
                     placeholder="Напиши что-нибудь..."
                     contentEditable={ editing }
                     onBlur={ onBlur }
